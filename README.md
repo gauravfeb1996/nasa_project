@@ -37,7 +37,7 @@ The backend exposes APIs for managing planets and launches.
 #### Planets
 
 ```http
-GET /v1/planets
+GET /planets
 ```
 
 Returns the list of potentially habitable planets.
@@ -45,7 +45,7 @@ Returns the list of potentially habitable planets.
 #### Get Launches
 
 ```http
-GET /v1/launches
+GET /launches
 ```
 
 Returns all launch missions.
@@ -53,7 +53,7 @@ Returns all launch missions.
 #### Schedule Launch
 
 ```http
-POST /v1/launches
+POST /launches
 ```
 
 Example request:
@@ -70,7 +70,7 @@ Example request:
 #### Abort Launch
 
 ```http
-DELETE /v1/launches/:id
+DELETE /launches/:id
 ```
 
 Marks an upcoming mission as aborted.
